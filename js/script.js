@@ -7,15 +7,17 @@
 'use strict'
 
 // eslint-disable-next-line no-unused-vars
-function checkNumber () {
-  let age = parseFloat(document.getElementById('age').value)
-  const day = document.getElementById('day').value
 
-  if (((age > 12) && (age < 21)) || (day === 'Tuesday') || (day === 'Thursday')) {
-    age = ('You get a discount at the museum!')
-  } else {
-    age = ('You must pay full price at the museum.')
+  function multiplyNumbers() {
+  const num1 = parseInt(document.getElementById('number1').value)
+  const num2 = parseInt(document.getElementById('number2').value)
+  let result = 0
+  let count = 0
+
+  while (count < num2) {
+    result = result + num1
+    count++
   }
 
-  document.getElementById('result').innerHTML = `<p><strong>${age}</strong></p>`
+  document.getElementById('multiply-result').innerHTML = `<p><strong>${num1} x ${num2} = ${result}</strong></p>`
 }
