@@ -8,7 +8,7 @@
 
 // eslint-disable-next-line no-unused-vars
 
-  function multiplyNumbers() {
+  function multiplyNumbers () {
   const num1 = parseInt(document.getElementById('number1').value)
   const num2 = parseInt(document.getElementById('number2').value)
   let result = 0
